@@ -1,0 +1,8 @@
+prefix=/home/yididiya/catkin_ws/install
+
+Name: three_link_package
+Description: Description of three_link_package
+Version: 0.0.0
+Cflags: 
+Libs: -L/home/yididiya/catkin_ws/install/lib 
+Requires: 

@@ -1,0 +1,2 @@
+myrobot_package:three_link_package
+-DCATKIN_DEVEL_PREFIX=/home/yididiya/catkin_ws/devel -DCMAKE_INSTALL_PREFIX=/home/yididiya/catkin_ws/install -G Unix Makefiles

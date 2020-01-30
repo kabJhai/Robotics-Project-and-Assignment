@@ -1,0 +1,8 @@
+prefix=/home/yididiya/catkin_ws/devel
+
+Name: myrobot_package
+Description: Description of myrobot_package
+Version: 0.0.0
+Cflags: 
+Libs: -L/home/yididiya/catkin_ws/devel/lib 
+Requires: roscpp gazebo_ros

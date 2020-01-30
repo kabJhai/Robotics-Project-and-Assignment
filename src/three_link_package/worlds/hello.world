@@ -1,0 +1,31 @@
+<?xml version="1.0"?> 
+<sdf version="1.4">
+  <world name="default">
+    <!-- Ground Plane -->
+    <include>
+      <uri>model://ground_plane</uri>
+    </include>
+
+    <include>
+      <uri>model://sun</uri>
+    </include>
+	  <model name="manipulator">
+	    <include>
+	      <uri>model://gripper</uri>
+	      <pose>0 0 0.4 0 0 0</pose>
+	    </include>
+
+	    <include>
+	      <uri>model://arm</uri>
+	      <pose>0 0 0 0 0 0</pose>
+	    </include>
+
+	    <joint name="arm_gripper_joint" type="fixed">
+	      <parent>three_link::top</parent>
+	      <child>gripper_part::palm</child>
+	    </joint>
+
+		<plugin name="three_link_package" filename="libthree_link_package.so"/>
+	  </model>
+  </world>
+</sdf>
